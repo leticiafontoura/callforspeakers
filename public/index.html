@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="cache-control" content="no-cache"/>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Call for Speakers - Talk'n'Labs</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,300i,400,500,600,700&display=swap" rel="stylesheet">
+<body>
+
+<div class="container">
+  <div class="hs-text">
+
+    <h1>IBM <span class="bold">TALK'N'LABS</span><br><span class="bold">CALL</span> FOR <span class="bold">SPEAKERS</span></h1>
+    <h3>Preencha os dados abaixo para sugerir sessões técnicas e labs para o evento de IBM Cloud que acontecerá no dia 11 de outubro.</h3>
+
+  </div>
+
+  <div class="section">
+  <form id="cfs_form">
+  <p>
+  <label>Escolha o formato da apresentação:</label><br>
+  <input type="radio" name="radios" value="0" checked id="lab1h"> Laboratório hands on (1h de duração)<br>
+  <input type="radio" name="radios" value="1" id="lab1h30"> Laboratório hands on (1h30 de duração)<br>
+  <input type="radio" name="radios" value="2" id="techSession"> Sessão técnica demonstrativa (30 minutos)<br>
+  </p>
+  <p>
+  <label>Título da sessão ou laboratório</label><br>
+  <input type="text" name="title" id="title" required><br>
+  </p>
+  <p>
+  <label>Descrição. Favor detalhar o conteúdo apresentado, incluindo as soluções IBM que serão exploradas. <br> Considere também convidar um cliente ou parceiro para dividir sobre implementação da solução.</label><br><br>
+  <textarea rows="7" cols="57" name="descrp" form="cfs_form" id="descrp" placeholder="Escreva..." required></textarea><br>
+  </p>
+  <p>
+  <label>Qual a audiência foco (ex: arquiteto de infra, desenvolvedor, cientista de dados e etc)</label><br>
+  <input type="text" name="focusAud" id="aud" required><br>
+  </p>
+  <p>
+  <label>Nome do Palestrante</label><br>
+   <input type="text" name="spkrName" id="name" required><br>
+  </p>
+  <p>
+  <label>E-mail do Palestrante</label><br>
+   <input type="email" name="spkrEmail" id="email" required><br>
+  </p>
+  <p>
+  <label>Infraestrurura necessária (Ex: internet banda larga, máquinas virtuais, etc)</label><br><br>
+   <textarea rows="7" cols="57" name="infra" id="infra" placeholder="Detalhe aqui." required></textarea><br>
+  </p>
+  <div class="submit-btn">
+  <button type="submit" value="Enviar" form="cfs_form" required id="submit">Enviar</button>
+  </div>
+
+  </form>
+
+
+  </div>
+
+</div>
+
+<footer></footer>
+
+ <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+    <!--This script is not in the video and is new-->
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-database.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
