@@ -56,6 +56,19 @@ h1, h3 {
   color: white;
   font-family: 'IBM Plex Sans', sans-serif;
 }
+
+textarea {
+    width: 100%;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
 @media only screen and (min-width: 300px) and (max-width: 960px) {
   .container {
     max-width: 100%;
@@ -75,14 +88,44 @@ h1, h3 {
     max-width: 100%;
   }
   textarea {
-    width: 70%;
+  width: 100%;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
   }
 }
 
 input[type=text] {
-	width: 50%;
+	width: 100%;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 input[type=email] {
-	width: 50%;
+	width: 100%;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+label {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
 }
