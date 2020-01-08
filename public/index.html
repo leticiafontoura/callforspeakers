@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Call for Speakers - Talk'n'Labs</title>
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
 <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,300i,400,500,600,700&display=swap" rel="stylesheet">
 <body>
 
@@ -14,7 +14,7 @@
   <div class="hs-text">
 
     <h1>IBM <span class="bold">TALK'N'LABS</span><br><span class="bold">CALL</span> FOR <span class="bold">SPEAKERS</span></h1>
-    <h3>Preencha os dados abaixo para sugerir sessões técnicas e labs para o evento de IBM Cloud que acontecerá no dia 11 de outubro.</h3>
+    <h3>Preencha os dados abaixo para sugerir sessões técnicas e labs para o evento de IBM Cloud que acontecerá em março de 2020.</h3>
 
   </div>
 
@@ -22,33 +22,38 @@
   <form id="cfs_form">
   <p>
   <label>Escolha o formato da apresentação:</label><br>
-  <input type="radio" name="radios" value="0" checked id="lab1h"> Laboratório hands on (1h de duração)<br>
   <input type="radio" name="radios" value="1" id="lab1h30"> Laboratório hands on (1h30 de duração)<br>
-  <input type="radio" name="radios" value="2" id="techSession"> Sessão técnica demonstrativa (30 minutos)<br>
+  <input type="radio" name="radios" value="2" id="techSession"> Sessão técnica (40 minutos)<br><br>
   </p>
   <p>
-  <label>Título da sessão ou laboratório</label><br>
-  <input type="text" name="title" id="title" required><br>
+  <label>Título da sessão ou laboratório:</label><br>
+  <label class="obs"><em>Títulos objetivos tendem a atrair mais os participantes. Exemplo de sessões que tiveram maior adesão na edição de 2019: "Kubernetes na prática", "Chatbot: passado, presente e futuro", "Lab: como integrar IoT e Machine Learning na IBM Cloud".</em></label><br>
+  <input type="text" name="title" id="title" required><br><br>
   </p>
   <p>
-  <label>Descrição. Favor detalhar o conteúdo apresentado, incluindo as soluções IBM que serão exploradas. <br> Considere também convidar um cliente ou parceiro para dividir sobre implementação da solução.</label><br><br>
-  <textarea rows="7" cols="57" name="descrp" form="cfs_form" id="descrp" placeholder="Escreva..." required></textarea><br>
+  <label>Descrição da sessão ou laboratório:</label><br>
+  <label class="obs"><em>Favor detalhar o conteúdo apresentado, incluindo as soluções IBM que serão exploradas. <br> Considere também convidar um cliente ou parceiro para dividir sobre implementação da solução.</label></em>
+  <textarea rows="7" cols="57" name="descrp" form="cfs_form" id="descrp" placeholder="Escreva..." required></textarea><br><br>
   </p>
   <p>
-  <label>Qual a audiência foco (ex: arquiteto de infra, desenvolvedor, cientista de dados e etc)</label><br>
-  <input type="text" name="focusAud" id="aud" required><br>
+  <label>Qual a audiência foco?</label><br>
+  <label class="obs"><em>Ex: arquiteto de infra, desenvolvedor, cientista de dados e etc.</em></label><br>
+  <input type="text" name="focusAud" id="aud" required><br><br>
   </p>
   <p>
-  <label>Nome do Palestrante</label><br>
-   <input type="text" name="spkrName" id="name" required><br>
+  <label>Nome do Palestrante:</label><br>
+  <label class="obs"><em>Caso tenha mais de um palestrante, indique o nome no mesmo campo.</em></label><br>
+   <input type="text" name="spkrName" id="name" required>
   </p>
   <p>
-  <label>E-mail do Palestrante</label><br>
-   <input type="email" name="spkrEmail" id="email" required><br>
+  <label>E-mail do Palestrante:</label><br>
+  <label class="obs"><em>Caso tenha mais de um palestrante, indicar apenas o e-mail de quem será o ponto focal para contato.</em></label><br>
+   <input type="email" name="spkrEmail" id="email" required><br><br>
   </p>
   <p>
-  <label>Infraestrurura necessária (Ex: internet banda larga, máquinas virtuais, etc)</label><br><br>
-   <textarea rows="7" cols="57" name="infra" id="infra" placeholder="Detalhe aqui." required></textarea><br>
+  <label>Infraestrutura necessária:</label><br>
+  <label class="obs"><em>Ex: internet banda larga, conta IBM Cloud, etc).</em></label><br>
+  <input type="text" name="infra" id="infra" placeholder="Detalhe aqui." required><br>
   </p>
   <div class="submit-btn">
   <button type="submit" value="Enviar" form="cfs_form" required id="submit">Enviar</button>
@@ -66,7 +71,7 @@
  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
     <!--This script is not in the video and is new-->
     <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-database.js"></script>
-<script src="main.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>
