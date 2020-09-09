@@ -22,7 +22,7 @@ body {
   margin: 0 auto;
 }
 
-h1, h3 {
+h1, h4 {
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 300;
 }
@@ -63,11 +63,14 @@ h1, h3 {
   width: 50%;
   border: 0px;
   background-color: #0f62fe;
-  font-weight: 300;
-  font-size: 1.5rem;
+  font-weight: 500;
+  font-size: 1.3rem;
   color: white;
   font-family: 'IBM Plex Sans', sans-serif;
   cursor: pointer;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 textarea {

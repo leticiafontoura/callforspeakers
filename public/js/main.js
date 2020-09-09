@@ -34,20 +34,10 @@ function submitForm(e){
  var descrp = getInputVal('descrp');
  var aud = getInputVal('aud');
  var solucoes = getInputVal('solucoes');
- var selectedLab;
 
- for (var i = 0, length = radios.length; i < length; i++) {
-  if (radios[i].checked) {
-    // save selected radio to the previously declared variable
-    selectedLab = radios[i].value;
-
-    // only one radio can be logically checked, don't check the rest
-    break;
-  }
-}
   
   //save message
- saveMessage(title, name, email, descrp, aud, solucoes, selectedLab);
+ saveMessage(title, name, email, descrp, aud, solucoes);
 
 //Clear form after submitting
   document.getElementById('cfs_form').reset();
@@ -62,13 +52,12 @@ function getInputVal(id){
 }
 
 //save message to firebase 
-function saveMessage(title, name, email, descrp, aud, solucoes, selectedLab){
+function saveMessage(title, name, email, descrp, aud, solucoes){
  var newMessageRef = messagesRef.push();
  newMessageRef.set({
   title: title,
   name: name,
   email: email,
-  selectedLab: selectedLab,
   descrp: descrp,
   aud: aud,
   solucoes: solucoes
