@@ -22,22 +22,24 @@
   <form id="cfs_form">
   <p>
   <label>Escolha o formato da apresentação:</label><br>
+   <input type="radio" name="radios" value="2" id="techSession"> Sessão técnica (40 minutos)<br>
   <input type="radio" name="radios" value="1" id="lab1h30"> Laboratório hands on (1h30 de duração)<br>
-  <input type="radio" name="radios" value="2" id="techSession"> Sessão técnica (40 minutos)<br><br>
+  <input type="radio" name="radios" value="0" id="lab1h30"> Workshop demonstrativo (1h30 de duração)<br><br>
+ 
   </p>
   <p>
-  <label>Título da sessão ou laboratório:</label><br>
-  <label class="obs"><em>Títulos objetivos tendem a atrair mais os participantes. Exemplo de sessões que tiveram maior adesão na edição de 2019: "Kubernetes na prática", "Chatbot: passado, presente e futuro", "Lab: como integrar IoT e Machine Learning na IBM Cloud".</em></label><br>
+  <label>Título da sessão:</label><br>
+  <label class="obs"><em>Títulos objetivos tendem a atrair mais os participantes. Exemplos: "Kubernetes na prática", "Redes Neurais como um serviço na plataforma OpenShift", "Kabanero: Ah, se eu tivesse descoberto antes".</em></label><br>
   <input type="text" name="title" id="title" required><br><br>
   </p>
   <p>
-  <label>Descrição da sessão ou laboratório:</label><br>
-  <label class="obs"><em>Favor detalhar o conteúdo apresentado, incluindo as soluções IBM que serão exploradas. <br> Considere também convidar um cliente ou parceiro para dividir sobre implementação da solução.</label></em>
+  <label>Descrição da sessão:</label><br>
+  <label class="obs"><em>Favor detalhar o conteúdo apresentado.</label></em>
   <textarea rows="7" cols="57" name="descrp" form="cfs_form" id="descrp" placeholder="Escreva..." required></textarea><br><br>
   </p>
   <p>
   <label>Qual a audiência foco?</label><br>
-  <label class="obs"><em>Ex: arquiteto de infra, desenvolvedor, cientista de dados e etc.</em></label><br>
+  <label class="obs"><em>Ex: arquiteto de infra, desenvolvedor, cientista de dados, etc.</em></label><br>
   <input type="text" name="focusAud" id="aud" required><br><br>
   </p>
   <p>
@@ -51,9 +53,8 @@
    <input type="email" name="spkrEmail" id="email" required><br><br>
   </p>
   <p>
-  <label>Infraestrutura necessária:</label><br>
-  <label class="obs"><em>Ex: internet banda larga, conta IBM Cloud, etc).</em></label><br>
-  <input type="text" name="infra" id="infra" placeholder="Detalhe aqui." required><br>
+  <label>Soluções IBM que serão exploradas na sessão:</label><br>
+  <input type="text" name="solucoes" id="solucoes" placeholder="Detalhe aqui." required><br>
   </p>
   <div class="submit-btn">
   <button type="submit" value="Enviar" form="cfs_form" required id="submit">Enviar</button>

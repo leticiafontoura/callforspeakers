@@ -33,7 +33,7 @@ function submitForm(e){
  var email = getInputVal('email');
  var descrp = getInputVal('descrp');
  var aud = getInputVal('aud');
- var infra = getInputVal('infra');
+ var solucoes = getInputVal('solucoes');
  var selectedLab;
 
  for (var i = 0, length = radios.length; i < length; i++) {
@@ -47,7 +47,7 @@ function submitForm(e){
 }
   
   //save message
- saveMessage(title, name, email, descrp, aud, infra, selectedLab);
+ saveMessage(title, name, email, descrp, aud, solucoes, selectedLab);
 
 //Clear form after submitting
   document.getElementById('cfs_form').reset();
@@ -62,7 +62,7 @@ function getInputVal(id){
 }
 
 //save message to firebase 
-function saveMessage(title, name, email, descrp, aud, infra, selectedLab){
+function saveMessage(title, name, email, descrp, aud, solucoes, selectedLab){
  var newMessageRef = messagesRef.push();
  newMessageRef.set({
   title: title,
@@ -71,7 +71,7 @@ function saveMessage(title, name, email, descrp, aud, infra, selectedLab){
   selectedLab: selectedLab,
   descrp: descrp,
   aud: aud,
-  infra: infra
+  solucoes: solucoes
  });
 
 alert("Cadastro feito com sucesso");
